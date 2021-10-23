@@ -1,3 +1,5 @@
+// Determine the popularity of certain words in the text
+
 function popularWords(text: string, words: string[]) {
   let str = text.toLowerCase().split(/\s+/);
   let dic = {};

@@ -18,10 +18,8 @@ console.log(findCapitals("CodEWaRs"));
 
 ////////////////////// CLEAR SOLUTION /////////////////////////////
 function findCapitals2(word: string): number[] {
-  return word.match(/[A-Z]/g).map((x) => {
-    return word.indexOf(x);
-  });
+  return word.match(/[A-Z]/g).map((x) => word.indexOf(x));
 }
 
-console.log("CodEWaRs");
+console.log(findCapitals2("CodEWaRs"));
 ///////////////////////////////////////////////////////////////////

@@ -21,5 +21,16 @@ function findCapitals2(word: string): number[] {
   return word.match(/[A-Z]/g).map((x) => word.indexOf(x));
 }
 
-console.log(findCapitals2("CodEWaRs"));
+console.log(findCapitals2("CoCdEWaRs"));
 ///////////////////////////////////////////////////////////////////
+
+////////////////////// SOLUTION FOR 2 AND MORE SAME LETTERS ///////
+function findCapitals3(word: string): number[] {
+  var caps = [];
+  for (var i = 0; i < word.length; i++) {
+    if (word[i].toUpperCase() == word[i]) caps.push(i);
+  }
+  return caps;
+}
+
+console.log(findCapitals3("CoCdEWaRsRsdEEW"));

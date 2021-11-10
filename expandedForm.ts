@@ -19,3 +19,14 @@ function expandedForm2(num: number): string {
     .join(" + ");
 }
 console.log(expandedForm2(70304022));
+
+/////////////////////////////////////////////////////////////////
+
+var expandedForm3 = (num: number): string => {
+  var arr = num.toString().split("").reverse();
+  var result = [];
+  for (var i = 0; i < arr.length; i++) {
+    +arr[i] == 0 ? result.push() : result.push(arr[i] + "0".repeat(i));
+  }
+  return result.reverse().join(" + ");
+};

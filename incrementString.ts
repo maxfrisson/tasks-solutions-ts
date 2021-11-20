@@ -13,3 +13,11 @@ function incrementString2(strng: string): string {
 }
 
 console.log(incrementString2("foobar34"));
+////////////////////////////////////////////////////////////////////////////////////////
+
+/////////////////////////////////// CLEAR SOLUTION 2 ///////////////////////////////////
+function incrementString3(strng: string): string {
+  return strng.replace(/[\d]*$/, (i) => String(+i + 1).padStart(i.length, `0`));
+}
+
+console.log(incrementString3("foobar34"));

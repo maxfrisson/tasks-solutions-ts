@@ -9,7 +9,7 @@ function duplicateCount(text: string) {
   return res.size;
 }
 
-console.log(duplicateCount("abcdeaavvbb"));
+console.log(duplicateCount("aadfeaabgsdDdgthdd"));
 
 ///////////////////////////////CLEAR SOLUTION WITH MATCH ///////////////////////////
 function duplicateCount2(text: string) {

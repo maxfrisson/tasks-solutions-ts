@@ -6,3 +6,9 @@ function doubleChar(str: string): string {
 }
 
 console.log(doubleChar("abcd"));
+
+function doubleChar2(str: string): string {
+  return str.replace(/(.)/g, "$1$1");
+}
+
+console.log(doubleChar2("abcd"));

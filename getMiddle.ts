@@ -1,0 +1,7 @@
+function getMiddle(s: string): string {
+  let mid = Math.floor(s.length / 2);
+  return s.length % 2 ? s[mid] : s[mid - 1] + s[mid];
+}
+
+console.log(getMiddle("middle"));
+

@@ -32,3 +32,18 @@ console.log(whatCentury("2154"));
 console.log(whatCentury("2269"));
 console.log(whatCentury("1369"));
 console.log(whatCentury("49"));
+
+function whatCentury2(year) {
+  var century = Math.ceil(year / 100);
+  return (
+    century +
+    (century == 1 ? "st" : century < 20 ? "th" : ["th", "st", "nd", "rd"][century % 10] || "th")
+  );
+}
+
+console.log(whatCentury2("1999"));
+console.log(whatCentury2("2000"));
+console.log(whatCentury2("2154"));
+console.log(whatCentury2("2269"));
+console.log(whatCentury2("1369"));
+console.log(whatCentury2("49"));

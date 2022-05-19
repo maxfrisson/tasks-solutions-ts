@@ -21,5 +21,5 @@ function chineseZodiac(year) {
 }
 
 console.log(chineseZodiac(1924));
-console.log(chineseZodiac(1936));
+console.log(chineseZodiac(1937));
 console.log(chineseZodiac(2052));

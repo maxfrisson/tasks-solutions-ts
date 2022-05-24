@@ -1,4 +1,4 @@
-function isBalanced(string) {
+function isBalanced(string: string): boolean {
   const start = "{[(";
   const end = "}])";
   const queue = [];

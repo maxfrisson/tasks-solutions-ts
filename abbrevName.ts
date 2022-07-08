@@ -8,7 +8,7 @@ function abbrevName(name: string): string {
 console.log(abbrevName("Patrick Feenan"));
 
 function abbrevName2(name: string): string {
-  return name.match(/\b\w/g).join(".").toUpperCase();
+  return name && name.match(/\b\w/g)!.join(".").toUpperCase();
 }
 
 console.log(abbrevName2("Alex Fisher"));

@@ -1,4 +1,4 @@
-function sum(nums: number[], target: number): number[] {
+function twoSum(nums: number[], target: number): number[] {
   let result: number[] = [];
   nums.map((x) => {
     for (let i = 0; i < nums.length; i++) {
